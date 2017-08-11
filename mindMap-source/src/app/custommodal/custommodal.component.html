@@ -1,0 +1,17 @@
+<div class="container-fluid custom-modal-container">
+  <div class="row custom-modal-header">
+    <div class="col-sm-12">
+      <h1>Add question and answer</h1>
+    </div>
+  </div>
+  <div class="row" >
+    <div class="col-xs-12">
+        <span>On answer</span>
+        <input class="form-control" type="text" #answer (keyup)="onKeyUpAnswer(answer.value)" autofocus><br>
+        <span>Ask question</span>
+        <input class="form-control" type="text" #question (keyup)="onKeyUpQuestion(question.value)">
+        <button class="addNodeButton" (click)="okClicked()" >Ok </button>
+      <button class="addNodeButton" (click)="cancelClicked()">Cancel </button>
+      </div>
+  </div>
+</div>

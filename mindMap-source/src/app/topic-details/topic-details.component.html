@@ -1,0 +1,37 @@
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div >
+  <div class="container-panel">
+    <div #buttonContainer class="buttonContainer">
+    <div #title class="title">
+    MindMap Tree Editor
+  </div>
+      <button style="float: left;margin:10px;" (click)="gotoTopicsList()">BACK</button>
+
+  <div #addNode  class="addNode">
+    Add Discussion
+  </div>
+  <div #removeNode  class="removeNode">
+    Delete Discussion
+  </div>
+    <div #expandCollapse  class="expandCollapse">
+      Expand/Collapse Discussion
+    </div>
+    <div #renameNode  class="renameNode">
+      Rename Discussion
+    </div>
+    <div #addAnswer  class="addAnswer">
+      Add Answer
+    </div>
+    </div>
+  </div>
+  <div  (click)="svgClicked()" class="droppable" style="background:url('../assets/images/original.png')"  >
+  </div>
+  <span defaultOverlayTarget></span>
+  <!--<li  *ngFor="let disc of discussion">
+      {{disc.question}}
+  </li>
+-->
+
+
+</div>
